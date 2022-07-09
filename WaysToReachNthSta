@@ -1,0 +1,11 @@
+# In this problem we basically calculate no. of different ways in which we can reach nth stair taking 1 or max 2 steps at a time .
+# For eg: There are three ways for Reaching 3rd stair - (1,1,1) (2,1) (1,2)
+# Calculation is same as fiboncci Series just base case is different
+int countWays(int Stair){
+  if(n==1 || n==2){
+    return n;}
+  int recCall1 = countWays(Stair-1);
+  int recCall2 = countWays(Stair-2);
+  int smallCalc = recCall1 + recCall2;
+  return smallCalc;
+  }
