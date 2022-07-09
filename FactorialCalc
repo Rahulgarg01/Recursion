@@ -1,0 +1,8 @@
+int factorial(int n){
+  if(n==1){
+    return 1;}
+  int recursiveCall = factorial(n-1);
+  int smallCalc = recursiveCall*n;
+  return smallCalc;
+}
+  
