@@ -1,0 +1,8 @@
+long int fibonnaci(int n){
+  if(n==0 || n==1){
+    return n;}
+  int recCall1 = fibonnaci(n-1);
+  int recCall2 = fibonacci(n-2);
+  int smallCalc = recCall1+recCall2;
+  return smallCalc;
+  }
