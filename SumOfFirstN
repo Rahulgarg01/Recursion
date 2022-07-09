@@ -1,0 +1,8 @@
+#Finding Sum Of N numbers using Recursion
+long long int sumofn(long long int n){              #Creating a recursive function to get sum of first n numbers
+  if (n==1){                                        #Base case
+    return n;}
+  long long int recCall = sumofn(n-1);              #Recursive Call
+  long long int sum = n+recCall;                    #Small Calculation
+  return sum;
+}
